@@ -1,11 +1,18 @@
 <html>
     <head>
-        <title>{{title}} Order Details</title>
+        <title>{{ title }} Order Details</title>
     </head>
     <body>
         <h1>Order Details</h1>
         <p>
-            {{order_list[index]}}
+            <b>Customer Name: </b>{{ order.customer_name }}
+        </p>
+        <p>
+            <b>Order Date: </b> {{order.order_date}}
+        </p>
+        <p>
+            <b>Drink: </b> {{order.wine_name}}
+            <b> x </b> {{order.quantity}}
         </p>
     </body>
 
