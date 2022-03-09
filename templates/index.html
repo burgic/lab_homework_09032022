@@ -5,9 +5,10 @@
     <body>
         <h1>Order List</h1>
         {% for order in order_list%}
+
         <div>
             <p>
-                {{ order.wine_name }}: {{ order.quantity }}
+                <a href="http://127.0.0.1:5000/order/{{order_list.index(order)}}">{{ order.wine_name }}: {{ order.quantity }}</a>
             </p>
         </div>
         {% endfor %}
